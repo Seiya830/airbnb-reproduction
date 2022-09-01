@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/android-icon-192x192-c0465f9f0380893768972a31a614b670.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Airbnb模写</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $('accordion-content').on('click', function(){
+        var = $(this).data('id');
+        $('#selected').text(click);
+      });
+
+
+    </script>
+  </head>
+  <body>
+    <!-- ナビゲーション  -->
+    <nav class="navbar navbar-expand navbar-light bg-white">
+    <a class="navbar-brand" href="#"><i class="fab fa-airbnb"></i></a>
+      <div class="collapse navbar-collapse id=navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link"　href="#">概要<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">準備</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">安全</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">マネープラン</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+      <div class="home-inner">
+        <img src="img/9dda5626-56fe-45e6-9c21-95454f019ae4.jpg">
+      </div>
+
+      <div class="form-container">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="form">
+                <h1>最大ホスティング収入：<span>¥ 164,534</span> ／1か月、エリア：Kabukicho</h1>
+                <a href="#">予想ホスティング収入額の計算方法</a>
+              </div>
+            </div>
+
+          <hr class="form-border">
+
+            <div class="col-md-6">
+              <p class="hearing">予想ホスティング収入額を更新するにはお部屋についてさらに詳しくお聞かせください</p>
+
+              <div id="accordion" class="accordion-container">
+                <h4><input type="text"　style="border:none " id="place" placeholder="所在地"></h4>
+                <input id="selected"></input>
+
+                  <div class="room">
+                    <div class="accordion-content" data-id="まるまる貸切">
+                      <h6>まるまる貸切</h6>
+                      <p>ゲストはお部屋をまるまる独り占めできます。専用玄関があり、共有スペースはありません。通常、寝室、バスルーム、キッチンが含まれます。</p>
+                    </div>
+
+                    <div class="accordion-content"　id="private"　data-id="個室">
+                      <h6>個室</h6>
+                      <p>就寝時はゲスト専用の個室を利用します。その他のエリアは共用の場合があります。</p>
+                    </div>
+
+                    <div class="accordion-content" id="share"　data-id="シェアルーム">
+                      <h6>シェアルーム</h6>
+                      <p>ゲストの寝室は他者と共有する場合のある相部屋または共用エリアとなります。</p>
+                    </div>
+                  </div>
+
+                  <select name="guest">
+                    <option>ゲスト0人</option>
+                    <option>ゲスト1人</option>
+                    <option>ゲスト2人</option>
+                    <option>ゲスト3人</option>
+                    <option>ゲスト4人</option>
+                    <option>ゲスト5人</option>
+                    <option>ゲスト6人</option>
+                    <option>ゲスト7人</option>
+                    <option>ゲスト8人</option>
+                    <option>ゲスト9人</option>
+                    <option>ゲスト10人</option>
+                    <option>ゲスト11人</option>
+                    <option>ゲスト12人</option>
+                    <option>ゲスト13人</option>
+                    <option>ゲスト14人</option>
+                    <option>ゲスト15人</option>
+                  </select>
+
+                  <p class="guest-info">+ ゲストが利用できる特別なスペースがあればお知らせください</p>
+
+                  <div class="listing">
+                    <p>リスティングの掲載をはじめる</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Airbnbでホストするこれだけの理由</h2>
+          <p>どんなお家やお部屋でも、Airbnbなら簡単かつ安全にシェアでき、世界中の旅好きな仲間とつながれます。 予約可能日から料金、ハウスルール、ゲストとの交流程度まで、すべて自分で決めることができます。</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h2>困ったときも安心</h2>
+          <p>万一に備えるUS$1,000,000の財物補償、US$1,000,000の賠償責任保険が全予約に自動付帯。ホストのみなさまと建物・家財の安全をお守りするため全力で取り組んでいます。</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>無料でお部屋を掲載</h2>
+          <p>共有のリビングルームから別荘に至るまで、どんなスペースでも登録料なしで共有しましょう。</p>
+        </div>
+        <div class="col">
+          <h2>ホスティング方法を設定</h2>
+          <p>スケジュール、料金、ゲストへの要件をご自身で選択しましょう。 お困りの際にはいつでもサポートいたします。</p>
+        </div>
+        <div class="col">
+          <h2>はじめてのゲストが来ます！</h2>
+          <p>リスティングが掲載されると、条件にかなったゲストから連絡を受けとることができます。 ゲストの到着前に質問があればメッセージを送信できます。</p>
+          <a href="#">ホストをはじめる方法をチェック</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
